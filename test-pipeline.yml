@@ -1,0 +1,39 @@
+# This test pipeline executes integration tests in a Docker environment.
+name: Test pipeline
+
+resources:
+- repo: self
+
+trigger:
+- none
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: BuildAndTest
+  displayName: Build and Test API
+  jobs:
+  - job: BuildAndTest
+    displayName: Build and Test API
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: DownloadSecureFile@1
+      inputs:
+        secureFile: 'test.env'
+
+    - task: CmdLine@2
+      displayName: Run integration tests
+      inputs:
+        script: |
+          mv $(Agent.TempDirectory)/test.env /home/vsts/work/1/s/.env
+          
+          docker compose up -d --wait
+          sleep 5
+          curl localhost:8080/med/mock/20
+          curl localhost:8080/mock/20
+          docker exec -ti api /bin/bash
+          go test ./tests -v
+          exit
+          docker compose down

@@ -1,0 +1,39 @@
+###
+# @name register
+POST localhost:8080/register
+Content-Type: application/json
+
+{
+  "name": "Darius klein",
+  "email": "darius.klein@dariusklein.nl{{$random.integer(50)}}",
+  "password": "123",
+  "phone_number": "{{$random.integer(10)}}",
+  "encryption_key": "{{$random.alphanumeric(64)}}",
+  "data": "",
+  "med_id" : "med id placeholder",
+  "role": "user"
+}
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 201, "Response status is not 200");
+    });
+%}
+
+
+###
+# @name login
+POST localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "darius.klein@dariusklein.nl{{$random.integer(50)}}",
+  "password": "123"
+}
+
+> {%
+    client.global.set("auth_token", response.headers.valueOf("Authorization"));
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, "Response status is not 200");
+    });
+%}

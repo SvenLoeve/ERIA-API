@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="7e624832">
+        <description>Created after removal of "/topic/{id} GET" from viseh-api</description>
+        <accepts>topic_id_GET.html</accepts>
+    </rule>
+    <rule id="62df9b">
+        <description>Created after removal of "API Reference" from viseh-api</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="717aee5">
+        <description>Created after removal of "/users/{uid} PUT" from viseh-api</description>
+        <accepts>users_uid_PUT.html</accepts>
+    </rule>
+    <rule id="6410643e">
+        <description>Created after removal of "/users/{uid} GET" from viseh-api</description>
+        <accepts>users_uid_GET2.html</accepts>
+    </rule>
+    <rule id="d4eb9d1">
+        <description>Created after removal of "/users GET" from viseh-api</description>
+        <accepts>users_GET2.html</accepts>
+    </rule>
+    <rule id="38805cff">
+        <description>Created after removal of "API Reference" from viseh-api</description>
+        <accepts>API_Reference2.html</accepts>
+    </rule>
+    <rule id="46a4b524">
+        <description>Created after removal of "API Reference" from viseh-api</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="7f55fa0f">
+        <description>Created after removal of "Reference" from viseh-api</description>
+        <accepts>Reference.html</accepts>
+    </rule>
+    <rule id="6fa17a79">
+        <description>Created after removal of "/users/{uid} PUT" from viseh-api</description>
+        <accepts>users_uid_PUT.html</accepts>
+    </rule>
+    <rule id="2368bb6c">
+        <description>Created after removal of "/users/{uid} GET" from viseh-api</description>
+        <accepts>users_uid_GET.html</accepts>
+    </rule>
+    <rule id="1909374b">
+        <description>Created after removal of "/users/search GET" from viseh-api</description>
+        <accepts>users_search_GET.html</accepts>
+    </rule>
+    <rule id="2d615fd8">
+        <description>Created after removal of "/users GET" from viseh-api</description>
+        <accepts>users_GET.html</accepts>
+    </rule>
+    <rule id="8e7f7ec">
+        <description>Created after removal of "API Reference" from viseh-api</description>
+        <accepts>API_Reference2.html</accepts>
+    </rule>
+    <rule id="786c3366">
+        <description>Created after removal of "/users/{uid} PATCH" from viseh-api</description>
+        <accepts>users_uid_PATCH.html</accepts>
+    </rule>
+    <rule id="a841197">
+        <description>Created after removal of "/users/{uid} PUT" from viseh-api</description>
+        <accepts>users_uid_PUT.html</accepts>
+    </rule>
+    <rule id="555a4a55">
+        <description>Created after removal of "/users/{uid} GET" from viseh-api</description>
+        <accepts>users_uid_GET.html</accepts>
+    </rule>
+    <rule id="363b74a8">
+        <description>Created after removal of "/users/search GET" from viseh-api</description>
+        <accepts>users_search_GET.html</accepts>
+    </rule>
+    <rule id="92766e7">
+        <description>Created after removal of "/users GET" from viseh-api</description>
+        <accepts>users_GET.html</accepts>
+    </rule>
+    <rule id="227719e9">
+        <description>Created after removal of "API Reference" from viseh-api</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="3e15d4fb">
+        <description>Created after removal of "/users/{uid} PATCH" from eria docs</description>
+        <accepts>users_uid_PATCH.html</accepts>
+    </rule>
+    <rule id="4d468a70">
+        <description>Created after removal of "/users/{uid} PUT" from eria docs</description>
+        <accepts>users_uid_PUT.html</accepts>
+    </rule>
+    <rule id="bc39d68">
+        <description>Created after removal of "/users/{uid} GET" from eria docs</description>
+        <accepts>users_uid_GET.html</accepts>
+    </rule>
+    <rule id="7f6d237a">
+        <description>Created after removal of "/users/search GET" from eria docs</description>
+        <accepts>users_search_GET.html</accepts>
+    </rule>
+    <rule id="a7bf36f">
+        <description>Created after removal of "/users GET" from eria docs</description>
+        <accepts>users_GET.html</accepts>
+    </rule>
+    <rule id="46e8e1af">
+        <description>Created after removal of "/register POST" from eria docs</description>
+        <accepts>register_POST.html</accepts>
+    </rule>
+    <rule id="62509032">
+        <description>Created after removal of "/privacy GET" from eria docs</description>
+        <accepts>privacy_GET.html</accepts>
+    </rule>
+    <rule id="65c1c61">
+        <description>Created after removal of "/nfc/{uid} POST" from eria docs</description>
+        <accepts>nfc_uid_POST.html</accepts>
+    </rule>
+    <rule id="754c83bc">
+        <description>Created after removal of "/nfc/{uid} GET" from eria docs</description>
+        <accepts>nfc_uid_GET.html</accepts>
+    </rule>
+    <rule id="3bce6f92">
+        <description>Created after removal of "/mock/{count} GET" from eria docs</description>
+        <accepts>mock_count_GET.html</accepts>
+    </rule>
+    <rule id="6eceb06b">
+        <description>Created after removal of "/med/users/{uid} PATCH" from eria docs</description>
+        <accepts>med_users_uid_PATCH.html</accepts>
+    </rule>
+    <rule id="62280d51">
+        <description>Created after removal of "/med/users/{uid} PUT" from eria docs</description>
+        <accepts>med_users_uid_PUT.html</accepts>
+    </rule>
+    <rule id="1cccee41">
+        <description>Created after removal of "/med/users/{id} GET" from eria docs</description>
+        <accepts>med_users_id_GET.html</accepts>
+    </rule>
+    <rule id="69c088b1">
+        <description>Created after removal of "/med/users/search GET" from eria docs</description>
+        <accepts>med_users_search_GET.html</accepts>
+    </rule>
+    <rule id="205fc3e4">
+        <description>Created after removal of "/med/users GET" from eria docs</description>
+        <accepts>med_users_GET.html</accepts>
+    </rule>
+    <rule id="5a56d220">
+        <description>Created after removal of "/med/register POST" from eria docs</description>
+        <accepts>med_register_POST.html</accepts>
+    </rule>
+    <rule id="63c157f9">
+        <description>Created after removal of "/med/mock/{count} GET" from eria docs</description>
+        <accepts>med_mock_count_GET.html</accepts>
+    </rule>
+    <rule id="2f53b56c">
+        <description>Created after removal of "/med/login POST" from eria docs</description>
+        <accepts>med_login_POST.html</accepts>
+    </rule>
+    <rule id="6061ba75">
+        <description>Created after removal of "/login POST" from eria docs</description>
+        <accepts>login_POST.html</accepts>
+    </rule>
+    <rule id="7c50552c">
+        <description>Created after removal of "/dataProtection GET" from eria docs</description>
+        <accepts>dataProtection_GET.html</accepts>
+    </rule>
+    <rule id="3fbbc280">
+        <description>Created after removal of "API Reference" from eria docs</description>
+        <accepts>API_Reference.html</accepts>
+    </rule>
+    <rule id="3e4016fe">
+        <description>Created after removal of "Tutorial" from eria docs</description>
+        <accepts>Tutorial.html</accepts>
+    </rule>
+    <rule id="32fc7f1c">
+        <description>Created after removal of "How to" from eria docs</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+    <rule id="55ba3e97">
+        <description>Created after removal of "How to" from eria docs</description>
+        <accepts>How-to.html</accepts>
+    </rule>
+</rules>

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://json.eria-lifesystems.com",
+  "title": "Medical data",
+  "description": "Medical data format for Eria chips",
+  "type": "object",
+  "properties": {
+    "version": {
+      "description": "version of data format",
+      "type": "integer"
+    },
+    "keys": {
+      "description": "decryption keys",
+      "type": "array"
+    },
+    "data": {
+      "description": "medical data",
+      "type": "object",
+      "properties": {
+        "med-id": {
+          "description": "medical id",
+          "type": "string"
+        },
+        "dnr": {
+          "description": "do not resuscitate",
+          "type": "boolean"
+        },
+        "blood-type": {
+          "description": "blood type",
+          "type": "string"
+        },
+        "name": {
+          "description": "naam",
+          "type": "string"
+        },
+        "date-of-birth": {
+          "description": "date of birth",
+          "type": "string"
+        },
+        "ICE": {
+          "description": "in case of emergency contact",
+          "type": "string"
+        },
+        "allergies": {
+          "description": "allergies",
+          "type": "array"
+        },
+        "medications": {
+          "description": "Medications",
+          "type": "array"
+        },
+        "implants": {
+          "description": "implants",
+          "type": "array"
+        },
+        "conditions": {
+          "description": "medical conditions with severity",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "condition name",
+                "type": "string"
+              },
+              "severity": {
+                "description": "severity",
+                "type": "integer"
+              },
+              "description": {
+                "description": "description of condition specific to person",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

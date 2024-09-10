@@ -1,0 +1,71 @@
+# viseh
+
+###
+# @name register
+POST localhost:8080/register
+Content-Type: application/json
+
+{
+  "name": "{{$random.alphabetic(10)}}",
+  "email": "{{$random.email}}",
+  "password": "{{$random.alphanumeric(16)}}",
+  "phone_number": "{{$random.integer(10)}}",
+  "encryption_key": "{{$random.alphanumeric(64)}}",
+  "data": "",
+  "bsn": {{$random.integer(10)}}
+}
+
+###
+# @name New Request
+POST localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "test@test.nl",
+  "password": "123"
+}
+
+###
+@jwt = variable value
+# @name New Request
+GET localhost:8080/nfc/1
+Authorization: {{jwt}}
+
+###
+# @name New Request Copy
+POST localhost:8080/nfc/1
+Authorization: {{jwt}}
+Content-Type: application/json
+
+{
+  "data": "{{$random.alphabetic(100)}}"
+}
+
+###
+# @name New Request
+POST localhost:8080/med/register
+Content-Type: application/json
+
+{
+  "name": "darius klein",
+  "email": "test@test.nl2",
+  "password": "123",
+  "phone_number": "06123123123",
+  "role": "ambulance",
+  "organisation": "test"
+}
+
+###
+# @name New Request
+POST localhost:8080/med/login
+Content-Type: application/json
+
+{
+  "email": "test@test.nl",
+  "password": "test"
+}
+
+###
+# @name New Request
+GET localhost:8080/med/nfc/1
+Authorization: {{jwt}}

@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "keys": [
+    "ab27748e0d21b268f835dd2db0734407841383627938c9199a6abf58f8b5dcadad156d32898638a04ed1e7cff07b1c08a78eae9bb5ac1b09301244f4d2a27d1aeffc7fcc7f866188fa5ef92190c38468ee0e550bd72f7766d590507d"
+  ],
+  "data": {
+    "dnr": true,
+    "blood-type": "A",
+    "name": "Bernadine Rath",
+    "date-of-birth": "2024-05-28",
+    "ICE": "7299317449",
+    "allergies": [
+      "zuivel"
+    ],
+    "medication": [
+      "paracetamol"
+    ],
+    "implants": [],
+    "conditions": [
+      {
+        "name": "rerum",
+        "severity": 5970314890077541486,
+        "description": "Consectetur tempora dolore dolorem sed ipsam ducimus ea beatae non."
+      },
+      {
+        "name": "eum",
+        "severity": 810999987726856829,
+        "description": "Eum molestiae eius quis odit omnis sint voluptatibus dolor illo."
+      },
+      {
+        "name": "illo",
+        "severity": 2404512997910184127,
+        "description": "Pariatur ut doloremque quam dolorum quasi facilis fuga rerum aut."
+      },
+      {
+        "name": "temporibus",
+        "severity": 1092493915205882440,
+        "description": "Sunt corporis facilis dolore quae in est maiores neque expedita."
+      },
+      {
+        "name": "facere",
+        "severity": 1942010003567994239,
+        "description": "Officiis saepe soluta qui aut esse est et ea neque."
+      },
+      {
+        "name": "necessitatibus",
+        "severity": 7310282876052275214,
+        "description": "Sunt dolorum occaecati ut consequatur tenetur alias repellendus voluptas dolor."
+      }
+    ]
+  }
+}

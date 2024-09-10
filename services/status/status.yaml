@@ -1,0 +1,6 @@
+#services to check
+services:
+  - database-db-1
+  - backend-docs
+  - backend
+  - nginx-app-1

@@ -1,0 +1,115 @@
+# This pipeline builds and deploys the backend and API documentation to the server.
+name: Deploy pipeline
+
+trigger:
+  - main
+  - staging
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+
+  - stage: BuildAndPushApi
+    displayName: Build and push image
+    jobs:
+      - job: BuildAndPush
+        displayName: Build and push image (API)
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: DownloadSecureFile@1
+            inputs:
+              secureFile: 'backend.env'
+
+          - task: DownloadSecureFile@1
+            inputs:
+              secureFile: 'test.env'
+
+          - task: DownloadSecureFile@1
+            inputs:
+              secureFile: 'root.crt'
+
+          - task: DownloadSecureFile@1
+            inputs:
+              secureFile: 'server.crt'
+
+          - task: DownloadSecureFile@1
+            inputs:
+              secureFile: 'server.key'
+
+          - task: CmdLine@2
+            inputs:
+              script: |
+                mv $(Agent.TempDirectory)/backend.env /home/vsts/work/1/s/.env
+                mv $(Agent.TempDirectory)/root.crt /home/vsts/work/1/s/root.crt
+                mv $(Agent.TempDirectory)/server.crt /home/vsts/work/1/s/server.crt
+                mv $(Agent.TempDirectory)/server.key /home/vsts/work/1/s/server.key
+
+          - task: Docker@2
+            inputs:
+              containerRegistry: 'Eria docker registry'
+              repository: 'viseh-api'
+              command: 'buildAndPush'
+              Dockerfile: '**/Dockerfile'
+              tags: 'latest'
+
+  - stage: deployApi
+    displayName: Deploy Backend API
+    jobs:
+      - deployment: Build_and_deploy_backend
+        displayName: Deploy Backend API
+        pool:
+          vmImage: 'Ubuntu-latest'
+        environment: 'HU-servers.OICT-AUTO-1804110-Project'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - script: |
+                    docker login docker.eria-lifesystems.com -u Darius -p $(password)
+                    docker pull docker.eria-lifesystems.com/viseh-api
+                    docker stop backend
+                    sleep 5
+                    docker run --rm -d -p 8080:8080 --name backend --net=host docker.eria-lifesystems.com/viseh-api
+                      
+
+  - stage: BuildAndPush
+    displayName: Build and push image
+    jobs:
+      - job: BuildAndPush
+        displayName: Build and push image (Documentation)
+        pool:
+          vmImage: ubuntu-latest
+        steps:
+          - task: Docker@2
+            inputs:
+              containerRegistry: 'Eria docker registry'
+              repository: 'viseh-api-docs'
+              command: 'buildAndPush'
+              Dockerfile: '**/docs/Dockerfile'
+              buildContext: $(Build.Repository.LocalPath)
+              tags: 'latest'
+
+  - stage: deploy
+    displayName: Deploy OpenAPI docs
+    jobs:
+      - deployment: Build_and_deploy_docs
+        displayName: Deploy OpenAPI docs
+        pool:
+          vmImage: 'Ubuntu-latest'
+        environment: 'HU-servers.OICT-AUTO-1804110-Project'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - script: |
+                    docker login docker.eria-lifesystems.com -u Darius -p $(password)
+                    docker pull docker.eria-lifesystems.com/viseh-api-docs
+                    docker stop backend-docs
+                    sleep 5 
+                    docker run --rm -dit -p 8181:80 --name backend-docs docker.eria-lifesystems.com/viseh-api-docs
+
+
+
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="eria-docs"
+                 name="eria docs"
+                 start-page="About-viseh.md">
+
+    <toc-element topic="About-viseh.md"/>
+    <toc-element topic="Techstack.md"/>
+    <toc-element topic="Install.md"/>
+    <toc-element topic="Update-Documentation.md"/>
+    <toc-element topic="Project-Structure.md"/>
+    <toc-element topic="assets.md">
+        <toc-element topic="images.md"/>
+    </toc-element>
+    <toc-element topic="viseh-api.md">
+        <toc-element topic="API_Reference.md">
+            <toc-element topic="users_uid_PATCH.md"/>
+            <toc-element topic="users_uid_PUT.md"/>
+            <toc-element topic="users_uid_GET.md"/>
+            <toc-element topic="users_search_GET.md"/>
+            <toc-element topic="users_GET.md"/>
+            <toc-element topic="register_POST.md"/>
+            <toc-element topic="privacy_GET.md"/>
+            <toc-element topic="nfc_uid_POST.md"/>
+            <toc-element topic="nfc_uid_GET.md"/>
+            <toc-element topic="mock_count_GET.md"/>
+            <toc-element topic="med_users_uid_PATCH.md"/>
+            <toc-element topic="med_users_uid_PUT.md"/>
+            <toc-element topic="med_users_id_GET.md"/>
+            <toc-element topic="med_users_search_GET.md"/>
+            <toc-element topic="med_users_GET.md"/>
+            <toc-element topic="med_register_POST.md"/>
+            <toc-element topic="med_nfc_med_id_GET.md"/>
+            <toc-element topic="med_mock_count_GET.md"/>
+            <toc-element topic="med_login_POST.md"/>
+            <toc-element topic="login_POST.md"/>
+            <toc-element topic="dataProtection_GET.md"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>
