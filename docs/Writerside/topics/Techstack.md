@@ -1,9 +1,21 @@
 # Techstack
-VISEH consists of multiple frameworks. Let's start with the backend and frontend!
+The ERIA System is not complex, however the implementation and execution require a lot of attention to detail to make sure this system does not fail.
+
+Written below are the specification of the various subsystems that make up the ERIA-lifesystems system life cycle.
+
+___
 ### Backend
-The backend consists of an API and a database. We currently use Golang (also called Go) for the backend. This is a programming language developed by Google around 2009. We chose Go because of its efficiency and simplicity.
 
-For the database, we opted for PostgreSQL due to its performance, platform independence, and extensibility.
+The backend subsystem is built up out of multiple sub processes. These processes include:
+* Main ERIA database
+* Customer organisation database
+* API data handeling and routing
 
+The Databases are written in PostgreSQL. This was chosen by the first development teams for its performance, platform independence, and extensibility.
+
+The backend itself is built in Golang (Go for short). This language was chosen because of its efficiency and simplicity.
+___
 ### Frontend
+
+
 The frontend is simpler compared to the backend. For the frontend, we chose Flutter, because it is cross-platform compatible, allowing us to release the same software on both iOS and Android.
