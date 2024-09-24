@@ -110,7 +110,7 @@ ___
 
   CSC Developer
 
-  [max.govers1@student.hu.nl](Mailto:max.govers1@student.hu.nl)
+  [max.govers1@student.hu.nl](mailto:max.govers1@student.hu.nl)
 
 
 * **Jake Kaminski**
@@ -123,3 +123,4 @@ ___
 * **Shvan Yakana**
 
   Backend Developer | Scrum master
+* [shvan.yakana@student.hu.nl](mailto:shvan.yakana@student.hu.nl)
