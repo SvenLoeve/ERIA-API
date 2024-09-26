@@ -19,28 +19,24 @@ The following people have contributed to ERIA throughout its development:
 * **Sven Loeve**
 
   Product owner
-
   [Svenloeve@gmail.com](mailto:Svenloeve@gmail.com)
 
 
 * **Hidde Linders**
 
   Frontend Developer | Scrum master
-
   [hidde.linderse@gmail.com](mailto:hidde.linderse@gmail.com)
 
 
 * **[Julius Ruhe](https://juliusruhe.com/)**
 
   Backend Developer
-
   [juliusruhe@gmail.com](mailto:juliusruhe@gmail.com)
 
 
 * **Rembrandt Tran**
 
   Backend Developer
-  
   [Rembrandt.vn@gmail.com](mailto:Rembrandt.vn@gmail.com)
 
 
@@ -50,42 +46,36 @@ ___
 * **[Sven Loeve](https://eria-lifesystems.com)**
 
   Product Owner
-
   [Svenloeve@gmail.com](mailto:Svenloeve@gmail.com)
 
 
 * **[Darius Klein](https://dariusklein.nl)**
 
   Backend Developer | Mobile Developer
-
   [Darius.klein@dariusklein.nl](mailto:Darius.klein@dariusklein.nl)
 
 
 * **[Floris Gravendeel](https://florisgravendeel.com)**
 
   Backend Developer
-
   [florisgra@gmail.com](mailto:florisgra@gmail.com)
 
 
 * **Sven van der Zouw**
 
   Mobile Developer | Scrum master
-
   [xxstackmaster69xx@gmail.com](mailto:xxstackmaster69xx@gmail.com)
 
 
 * **[Julius Ruhe](https://juliusruhe.com/)**
 
   Security Specialist
-
   [juliusruhe@gmail.com](mailto:juliusruhe@gmail.com)
 
 
 * **Rembrandt Tran**
 
   Fullstack Developer
-  
   [Rembrandt.vn@gmail.com](mailto:Rembrandt.vn@gmail.com)
 
 ___
@@ -95,7 +85,6 @@ ___
 * **[Sven Loeve](https://eria-lifesystems.com)**
 
   Product Owner
-
   [Svenloeve@gmail.com](mailto:Svenloeve@gmail.com)
 
 
@@ -103,20 +92,16 @@ ___
 
   Frontend Developer | UI / UX Developer
 
-[//]: # (  [maarten.vandenbremer@student.hu.nl]&#40;mailto:maarten.vandenbremer@student.hu.nl&#41;)
-
 
 * **Max Govers**
 
   CSC Developer
-
   [max.govers1@student.hu.nl](mailto:max.govers1@student.hu.nl)
 
 
 * **Jake Kaminski**
 
   Frontend Developer | UI / UX Developer
-
   [jake.kaminski@student.hu.nl](mailto:jake.kaminski@student.hu.nl)
 
 

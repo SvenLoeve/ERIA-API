@@ -15,6 +15,7 @@ The Databases are written in PostgreSQL. This was chosen by the first developmen
 
 The backend itself is built in Golang (Go for short). This language was chosen because of its efficiency and simplicity.
 ___
+
 ### Frontend
 
 The frontend of the ERIA-Lifesystems lifecycle (currently) consists of 3 separate applications, those are the following:
@@ -26,6 +27,7 @@ These 3 applications complete the current scope of the lifecycle. In the future 
 
 The scope for the frontend is and easy to use for the target audience. To adhere to this scope a consistent feedback loop is required and close cooperation between all parties.
 A scrum environment helps with this as it enables a consistent update schedule and easy release date estimation for fixes and updates. 
+___
 
 ## MedApp
 
@@ -35,8 +37,15 @@ This application's main purpose is showing the data from a target person.
 Since the application has two different locations of use within either ambulance services and care homes there is the possibility to use 2 different search identifier groups. 
 these are based on credentials and or link to organisation.
 
-This can be gathered from a set of input identifiers:
+The following is a set of input identifiers:
 * Personal identifier (Target = BSN)
 * Name & Surname (Target)
 * Home Address (Target)
 * Phone number (Target)
+* Room number (Target)
+* Any specific request from primary stakeholders (based on feedback)
+___
+
+## Backoffice
+
+The main use of the Backoffice is to show the use of the MedApp and show detailed information. 
